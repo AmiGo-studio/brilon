@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Register Now</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        
+       <!-- google-fonts -->
+       <link href="//fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+       rel="stylesheet">
+    <!-- //google-fonts -->
+        
+           <!-- CSS only -->
+           <style>
+            @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&display=swap');
+            </style>
+            <style>
+            @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap');
+            </style>
+    
+        <!-- Template Stylesheet -->
+       <link href="css/form.css" rel="stylesheet">
+       <link rel="stylesheet" href="fontawesome-free-6.4.2-web/css/font-awesome.min.css"> 
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+       <script src="script.js"></script>
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </head>
+      <body>
+        <span class="loader"></span>
+            <!-- Nav Bar Start -->
+            <nav class="navbar navbar-expand-lg navbar-light nav-sticky">
+    
+                <a class="navbar-brand" href="#"><img src="./img/brilon logo3.png" class="nav-thumbnail img-fluid"></a>
+                <button class="navbar-toggler hamburger" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                  <ul class="navbar-nav">
+                    <li class="nav-item ">
+                      <a class="nav-link" href="index.html #about">About us</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="course.html">Courses</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="tel:+919074266751">Call Us</a>
+                      </li>
+                    
+                  </ul>
+                </div>
+              </nav>
+            <!-- Nav Bar End -->
+            
+                <section class="section container" id="register">
+                  <header>Registration Form</header>
+                  <form id="submit-form" method="post" action="" class="form">
+                    <div class="input-box">
+                      <label>Full Name</label>
+                      <input type="text"  name="Name" placeholder="Enter full name" required />
+                    </div>
+            
+                    <div class="input-box">
+                      <label>Email Address</label>
+                      <input type="text" name="email" placeholder="Enter email address" required />
+                    </div>
+            
+                    <div class="column">
+                      <div class="input-box">
+                        <label>Phone Number</label>
+                        <input type="number" name="phone" placeholder="Enter phone number" required />
+                      </div>
+                      <div class="input-box">
+                        <label>Birth Date</label>
+                        <input type="date" name="DOB" placeholder="Enter birth date" required />
+                      </div>
+                    </div>
+                    <div class="gender-box">
+                      <h3>Gender</h3>
+                      <div class="gender-option">
+                        <div class="gender">
+                          <input type="radio" id="check-male" name="gender" checked />
+                          <label for="check-male">male</label>
+                        </div>
+                        <div class="gender">
+                          <input type="radio" id="check-female" name="gender" />
+                          <label for="check-male">Female</label>
+                        </div>
+                        <!-- <div class="gender">
+                          <input type="radio" id="check-other" name="gender" />
+                          <label for="check-other">prefer not to say</label>
+                        </div> -->
+                      </div>
+                    </div>
+                    <div class="input-box address">
+                      <label>Address</label>
+                      <input type="text" name="address" placeholder="Enter address" required />
+ 
+                      <div class="column">
+                        <input type="text" name="city" placeholder="Enter your city" required />
+                        <input type="number" name="postcode" placeholder="Enter postal code" required />
+                      </div>
+                      </div>
+                      <div class="input-box">
+
+                        <label>Course</label>
+                             <div class="select-box">
+                              <select name="course">
+                                <option hidden>Select you Course</option>
+                                <option value="MD/MS/MBBS/BDS">MD/MS/MBBS/BDS</option>
+                                <option value="BNYS | BAMS | BHMS">BNYS | BAMS | BHMS</option>
+                                <option value="GNMI PB.Bsc. Nursing">GNMI PB.Bsc. Nursing</option>
+                                <option value="B.sc Nursing | M.sc Nursing">B.sc Nursing | M.sc Nursing</option>
+                                <option value="Medical Imaging technology">Medical Imaging technology</option>
+                                <option value="Aneathesia">Aneathesia &
+                                    Operation theatre technology</option>
+                                <option value="MLT">Medical Laboratory technology</option>
+                                <option value="Respiratory care technology">Respiratory care technology</option>
+                                <option value="RDT">Renal Dialysis technology</option>
+                                <option value="Cardaic care technology">Cardaic care technology</option>
+                                <option value="Cardio vascular technology">Cardio vascular technology</option>
+                                <option value="Optometry">Optometry
+                                    Respiratory care technology</option>
+                                <option value="Emergency Medicine">Emergency Medicine</option>
+                                <option value="Radiotherapy">Radiotherapy</option>
+                                <option value="Bachelor of Physiotherapy">Bachelor of Physiotherapy </option>
+                                <option value="Master of Physiotherapy">Master of Physiotherapy</option>
+                                <option value="Comp. science eng">Computer science engineering</option>
+                                <option value="Mechanical eng.">Mechanical engineering</option>
+                                <option value="Marine eng.">Marine engineering</option>
+                                <option value="Bio chemical eng.">Bio chemical engineering</option>
+                                <option value="BCA with AI & Machine learning">BCA with AI & Machine learning</option>
+                                <option value="BCA with Cloud computing &
+                                Cyber security">BCA with Cloud computing &
+                                    Cyber security</option>
+                                <option value="BCA with AR/VR Data Science">BCA with AR/VR Data Science </option>
+                                <option value="MCA">MCA</option>
+                                <option value="BBA Aviation & Logistics">BBA Aviation & Logistics</option>
+                                <option value="BBA Travel & Tourism">BBA Travel & Tourism</option>
+                                <option value="B.COM with CA/CS,ACCA">B.COM with CA/CS,ACCA</option>
+                                <option value="Hotel Management">Hotel Management</option>
+                                <option value="MBA">MBA</option>
+                                <option value="Other">Other courses</option>
+                              </select>
+                            </div>
+                      
+                    </div>
+                    <button>Submit</button>
+                  </form>
+                </section>
+                <script>
+                  $("#submit-form").submit((e)=>{
+                      e.preventDefault()
+                      $.ajax({
+                          url:"https://script.google.com/macros/s/AKfycbzEfgSkBuPsZRrYPwCcpIMKJJobDQ5jgk23zcEts74K8DCWS-vt-SNR18qylbsa2HC8/exec",
+                          data:$("#submit-form").serialize(),
+                          method:"post",
+                          success:function (response){
+                              alert("Form submitted successfully")
+                              window.location.reload()
+                              //window.location.href="https://google.com"
+                          },
+                          error:function (err){
+                              alert("Something Error")
+              
+                          }
+                      })
+                  })
+              </script>
+              
+    
+
+<!-- footer -->
+<footer class="w3l-footer-22 position-relative mt-5 pt-5">
+    <div class="footer-sub">
+        <div class="container">
+            <div class="text-txt">
+                
+                <div class="row sub-columns">
+                    <div class="col-lg-4 col-md-6 col-sm-8 sub-one-left">
+                        <h6>About </h6>
+                        <p>We are a leading education consultancy Brilon in Trivandrum, 
+                          specifying in medical and engineering admissions.</p>
+                        <div class="columns-2">
+                            <ul class="social">
+                                <li><a href="#facebook"><span class="fa fa-facebook" aria-hidden="true"></span></a>
+                                </li>
+                                <li><a href="#linkedin"><span class="fa fa-linkedin" aria-hidden="true"></span></a>
+                                </li>
+                                <li><a href="#twitter"><span class="fa fa-twitter" aria-hidden="true"></span></a>
+                                </li>
+                                <li><a href="#google"><span class="fa fa-google-plus" aria-hidden="true"></span></a>
+                                </li>
+                                <li><a href="#github"><span class="fa fa-github" aria-hidden="true"></span></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-6 col-sm-4 mt-sm-0 mt-5 sub-two-right">
+                        <h6>Quick links</h6>
+                        <ul>
+                            <li><a href="index.html"><span class="fa fa-angle-double-right mr-2"></span>Home</a>
+                            </li>
+                            <li><a href="about.html"><span class="fa fa-angle-double-right mr-2"></span>About</a>
+                            </li>
+                            <li><a href="courses.html"><span
+                                        class="fa fa-angle-double-right mr-2"></span>Courses</a></li>
+                            <li><a href="contact.html"><span
+                                        class="fa fa-angle-double-right mr-2"></span>Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 sub-two-right pl-lg-5 mt-lg-0 mt-sm-5 mt-4">
+                        <h6>Help & Support</h6>
+                        <ul>
+                            <li><a href="#live"><span class="fa fa-angle-double-right mr-2"></span>Live
+                                    Chart</a></li>
+                            <li><a href="#faq"><span class="fa fa-angle-double-right mr-2"></span>Faq</a>
+                            </li>
+                            <li><a href="#support"><span class="fa fa-angle-double-right mr-2"></span>Support</a>
+                            </li>
+                            <li><a href="#terms"><span class="fa fa-angle-double-right mr-2"></span>Terms
+                                    of Services</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 sub-one-left mt-lg-0 mt-sm-5 mt-4">
+                        <h6>Contact </h6>
+                        <div class="column2">
+                            <div class="href1"><span class="fa fa-envelope-o" aria-hidden="true"></span><a
+                                    href="mailto:brilonedu@gmail.com">brilonedu@gmail.com</a>
+                            </div>
+                            <div class="href2"><span class="fa fa-phone" aria-hidden="true"></span><a
+                                    href="tel:+919074266751">9074266751</a>
+                            </div>
+                            <div>
+                                <p class="contact-para"><span class="fa fa-map-marker"
+                                        aria-hidden="true"></span>Palachira, Varkala 695143</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- copyright -->
+    <div class="copyright-footer text-center">
+        <div class="container">
+            <div class="columns">
+                <p>@2024 Brilon Educational Consultancy. All rights reserved. Design by <a href="https://amigostudio.in/"
+                        target="_blank"> Amigo Studio</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- //copyright -->
+    <!-- JavaScript Bundle with Popper -->
+        
+    
+  </footer>
+  <!-- //footer -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+
+</body>
+</html>
