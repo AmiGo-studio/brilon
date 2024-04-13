@@ -151,27 +151,8 @@
                     <button>Submit</button>
                   </form>
                 </section>
-                <script>
-                  $("#submit-form").submit((e)=>{
-                      e.preventDefault()
-                      $.ajax({
-                          url:"https://script.google.com/macros/s/AKfycbzEfgSkBuPsZRrYPwCcpIMKJJobDQ5jgk23zcEts74K8DCWS-vt-SNR18qylbsa2HC8/exec",
-                          data:$("#submit-form").serialize(),
-                          method:"post",
-                          success:function (response){
-                              alert("Form submitted successfully")
-                              window.location.reload()
-                              //window.location.href="https://google.com"
-                          },
-                          error:function (err){
-                              alert("Something Error")
+   
               
-                          }
-                      })
-                  })
-              </script>
-              
-    
 
 <!-- footer -->
 <footer class="w3l-footer-22 position-relative mt-5 pt-5">
@@ -260,6 +241,26 @@
     
   </footer>
   <!-- //footer -->
+          <script>
+    jQuery("#submit-form").submit((e)=>{
+        e.preventDefault()
+        jQuery.noConflict();
+        $.ajax({
+            url:"https://script.google.com/macros/s/AKfycbw_pZpB5d4iHp_WyX1pNE2WgpI_G2LNbqmpEujPir4lcUKr_ScC6XUuuWZ-R7jjG3Ai_Q/exec",
+            data:$("#submit-form").serialize(),
+            method:"post",
+            success:function (response){
+                alert("Form submitted successfully")
+                window.location.reload()
+                //window.location.href="https://google.com"
+            },
+            error:function (err){
+                alert("Something Error")
+
+            }
+        })
+    });
+</script>
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
 
